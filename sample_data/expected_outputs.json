@@ -1,0 +1,379 @@
+{
+  "healthcare_readmission_001": {
+    "category": "healthcare_readmission",
+    "expected_important_factors": [
+      "Recent emergency visit"
+    ]
+  },
+  "healthcare_readmission_002": {
+    "category": "healthcare_readmission",
+    "expected_important_factors": [
+      "Medication refill gap"
+    ]
+  },
+  "healthcare_readmission_003": {
+    "category": "healthcare_readmission",
+    "expected_important_factors": [
+      "Recent emergency visit"
+    ]
+  },
+  "healthcare_readmission_004": {
+    "category": "healthcare_readmission",
+    "expected_important_factors": [
+      "Recent emergency visit",
+      "Multiple chronic conditions"
+    ]
+  },
+  "healthcare_readmission_005": {
+    "category": "healthcare_readmission",
+    "expected_important_factors": [
+      "Multiple chronic conditions"
+    ]
+  },
+  "healthcare_readmission_006": {
+    "category": "healthcare_readmission",
+    "expected_important_factors": [
+      "Recent emergency visit"
+    ]
+  },
+  "healthcare_readmission_007": {
+    "category": "healthcare_readmission",
+    "expected_important_factors": [
+      "Recent emergency visit",
+      "Multiple chronic conditions"
+    ]
+  },
+  "healthcare_readmission_008": {
+    "category": "healthcare_readmission",
+    "expected_important_factors": [
+      "Recent emergency visit",
+      "Multiple chronic conditions"
+    ]
+  },
+  "healthcare_readmission_009": {
+    "category": "healthcare_readmission",
+    "expected_important_factors": [
+      "Multiple chronic conditions",
+      "Missed follow up appointment"
+    ]
+  },
+  "healthcare_readmission_010": {
+    "category": "healthcare_readmission",
+    "expected_important_factors": [
+      "Missed follow up appointment"
+    ]
+  },
+  "healthcare_readmission_011": {
+    "category": "healthcare_readmission",
+    "expected_important_factors": [
+      "Multiple chronic conditions",
+      "Enrolled in care program"
+    ]
+  },
+  "healthcare_readmission_012": {
+    "category": "healthcare_readmission",
+    "expected_important_factors": [
+      "Recent emergency visit"
+    ]
+  },
+  "insurance_claim_001": {
+    "category": "insurance_claim",
+    "expected_important_factors": [
+      "Multiple claims this year",
+      "Long tenure with insurer"
+    ]
+  },
+  "insurance_claim_002": {
+    "category": "insurance_claim",
+    "expected_important_factors": [
+      "High claim amount"
+    ]
+  },
+  "insurance_claim_003": {
+    "category": "insurance_claim",
+    "expected_important_factors": [
+      "High claim amount"
+    ]
+  },
+  "insurance_claim_004": {
+    "category": "insurance_claim",
+    "expected_important_factors": [
+      "Multiple claims this year"
+    ]
+  },
+  "insurance_claim_005": {
+    "category": "insurance_claim",
+    "expected_important_factors": [
+      "High claim amount"
+    ]
+  },
+  "insurance_claim_006": {
+    "category": "insurance_claim",
+    "expected_important_factors": [
+      "High claim amount"
+    ]
+  },
+  "insurance_claim_007": {
+    "category": "insurance_claim",
+    "expected_important_factors": [
+      "High claim amount"
+    ]
+  },
+  "insurance_claim_008": {
+    "category": "insurance_claim",
+    "expected_important_factors": [
+      "Long tenure with insurer"
+    ]
+  },
+  "insurance_claim_009": {
+    "category": "insurance_claim",
+    "expected_important_factors": [
+      "High claim amount",
+      "Recent policy change"
+    ]
+  },
+  "insurance_claim_010": {
+    "category": "insurance_claim",
+    "expected_important_factors": [
+      "Recent policy change"
+    ]
+  },
+  "insurance_claim_011": {
+    "category": "insurance_claim",
+    "expected_important_factors": [
+      "High claim amount"
+    ]
+  },
+  "insurance_claim_012": {
+    "category": "insurance_claim",
+    "expected_important_factors": [
+      "High claim amount"
+    ]
+  },
+  "credit_risk_001": {
+    "category": "credit_risk",
+    "expected_important_factors": [
+      "Short credit history"
+    ]
+  },
+  "credit_risk_002": {
+    "category": "credit_risk",
+    "expected_important_factors": [
+      "Short credit history"
+    ]
+  },
+  "credit_risk_003": {
+    "category": "credit_risk",
+    "expected_important_factors": [
+      "Recent missed payment"
+    ]
+  },
+  "credit_risk_004": {
+    "category": "credit_risk",
+    "expected_important_factors": [
+      "High credit utilization",
+      "Stable income on file"
+    ]
+  },
+  "credit_risk_005": {
+    "category": "credit_risk",
+    "expected_important_factors": [
+      "Recent missed payment"
+    ]
+  },
+  "credit_risk_006": {
+    "category": "credit_risk",
+    "expected_important_factors": [
+      "Recent missed payment"
+    ]
+  },
+  "credit_risk_007": {
+    "category": "credit_risk",
+    "expected_important_factors": [
+      "Recent missed payment"
+    ]
+  },
+  "credit_risk_008": {
+    "category": "credit_risk",
+    "expected_important_factors": [
+      "Multiple recent inquiries"
+    ]
+  },
+  "credit_risk_009": {
+    "category": "credit_risk",
+    "expected_important_factors": [
+      "Stable income on file"
+    ]
+  },
+  "credit_risk_010": {
+    "category": "credit_risk",
+    "expected_important_factors": [
+      "High credit utilization"
+    ]
+  },
+  "credit_risk_011": {
+    "category": "credit_risk",
+    "expected_important_factors": [
+      "High credit utilization"
+    ]
+  },
+  "credit_risk_012": {
+    "category": "credit_risk",
+    "expected_important_factors": [
+      "Recent missed payment"
+    ]
+  },
+  "fraud_risk_001": {
+    "category": "fraud_risk",
+    "expected_important_factors": [
+      "Mismatched billing details"
+    ]
+  },
+  "fraud_risk_002": {
+    "category": "fraud_risk",
+    "expected_important_factors": [
+      "Rapid successive transactions"
+    ]
+  },
+  "fraud_risk_003": {
+    "category": "fraud_risk",
+    "expected_important_factors": [
+      "Long standing account"
+    ]
+  },
+  "fraud_risk_004": {
+    "category": "fraud_risk",
+    "expected_important_factors": [
+      "Rapid successive transactions",
+      "Mismatched billing details"
+    ]
+  },
+  "fraud_risk_005": {
+    "category": "fraud_risk",
+    "expected_important_factors": [
+      "Rapid successive transactions"
+    ]
+  },
+  "fraud_risk_006": {
+    "category": "fraud_risk",
+    "expected_important_factors": [
+      "Unusual transaction location"
+    ]
+  },
+  "fraud_risk_007": {
+    "category": "fraud_risk",
+    "expected_important_factors": [
+      "Unusual transaction location",
+      "Mismatched billing details"
+    ]
+  },
+  "fraud_risk_008": {
+    "category": "fraud_risk",
+    "expected_important_factors": [
+      "Rapid successive transactions",
+      "New device login"
+    ]
+  },
+  "fraud_risk_009": {
+    "category": "fraud_risk",
+    "expected_important_factors": [
+      "Unusual transaction location",
+      "Rapid successive transactions"
+    ]
+  },
+  "fraud_risk_010": {
+    "category": "fraud_risk",
+    "expected_important_factors": [
+      "Unusual transaction location",
+      "Long standing account"
+    ]
+  },
+  "fraud_risk_011": {
+    "category": "fraud_risk",
+    "expected_important_factors": [
+      "Mismatched billing details"
+    ]
+  },
+  "fraud_risk_012": {
+    "category": "fraud_risk",
+    "expected_important_factors": [
+      "New device login"
+    ]
+  },
+  "operational_risk_001": {
+    "category": "operational_risk",
+    "expected_important_factors": [
+      "Aging open tickets",
+      "Single point of dependency"
+    ]
+  },
+  "operational_risk_002": {
+    "category": "operational_risk",
+    "expected_important_factors": [
+      "Aging open tickets"
+    ]
+  },
+  "operational_risk_003": {
+    "category": "operational_risk",
+    "expected_important_factors": [
+      "Aging open tickets"
+    ]
+  },
+  "operational_risk_004": {
+    "category": "operational_risk",
+    "expected_important_factors": [
+      "Aging open tickets"
+    ]
+  },
+  "operational_risk_005": {
+    "category": "operational_risk",
+    "expected_important_factors": [
+      "Repeated process exceptions"
+    ]
+  },
+  "operational_risk_006": {
+    "category": "operational_risk",
+    "expected_important_factors": [
+      "Aging open tickets",
+      "Single point of dependency"
+    ]
+  },
+  "operational_risk_007": {
+    "category": "operational_risk",
+    "expected_important_factors": [
+      "Repeated process exceptions"
+    ]
+  },
+  "operational_risk_008": {
+    "category": "operational_risk",
+    "expected_important_factors": [
+      "Repeated process exceptions",
+      "Single point of dependency"
+    ]
+  },
+  "operational_risk_009": {
+    "category": "operational_risk",
+    "expected_important_factors": [
+      "Repeated process exceptions"
+    ]
+  },
+  "operational_risk_010": {
+    "category": "operational_risk",
+    "expected_important_factors": [
+      "Single point of dependency",
+      "Aging open tickets"
+    ]
+  },
+  "operational_risk_011": {
+    "category": "operational_risk",
+    "expected_important_factors": [
+      "Aging open tickets"
+    ]
+  },
+  "operational_risk_012": {
+    "category": "operational_risk",
+    "expected_important_factors": [
+      "Repeated process exceptions"
+    ]
+  }
+}

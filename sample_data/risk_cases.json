@@ -1,0 +1,1640 @@
+[
+  {
+    "member_id": "mem_hea_001",
+    "case_id": "healthcare_readmission_001",
+    "risk_score": 0.89,
+    "risk_band": "high",
+    "model_name": "readmission_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Medication refill gap",
+        "direction": "increases_risk",
+        "weight": 0.18,
+        "evidence": "A refill gap of twenty one days was detected for a prescribed medication."
+      },
+      {
+        "name": "Missed follow up appointment",
+        "direction": "increases_risk",
+        "weight": 0.18,
+        "evidence": "One scheduled follow up appointment was not attended last month."
+      },
+      {
+        "name": "Recent emergency visit",
+        "direction": "increases_risk",
+        "weight": 0.29,
+        "evidence": "Member had two emergency visits in the last sixty days."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_hea_002",
+    "case_id": "healthcare_readmission_002",
+    "risk_score": 0.57,
+    "risk_band": "medium",
+    "model_name": "readmission_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Stable vitals at last visit",
+        "direction": "decreases_risk",
+        "weight": 0.1,
+        "evidence": "Vital signs were within the expected range at the most recent visit."
+      },
+      {
+        "name": "Medication refill gap",
+        "direction": "increases_risk",
+        "weight": 0.21,
+        "evidence": "A refill gap of twenty one days was detected for a prescribed medication."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_hea_003",
+    "case_id": "healthcare_readmission_003",
+    "risk_score": 0.79,
+    "risk_band": "high",
+    "model_name": "readmission_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Medication refill gap",
+        "direction": "increases_risk",
+        "weight": 0.23,
+        "evidence": "A refill gap of twenty one days was detected for a prescribed medication."
+      },
+      {
+        "name": "Recent emergency visit",
+        "direction": "increases_risk",
+        "weight": 0.26,
+        "evidence": "Member had two emergency visits in the last sixty days."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_hea_004",
+    "case_id": "healthcare_readmission_004",
+    "risk_score": 0.89,
+    "risk_band": "high",
+    "model_name": "readmission_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Recent emergency visit",
+        "direction": "increases_risk",
+        "weight": 0.31,
+        "evidence": "Member had two emergency visits in the last sixty days."
+      },
+      {
+        "name": "Medication refill gap",
+        "direction": "increases_risk",
+        "weight": 0.17,
+        "evidence": "A refill gap of twenty one days was detected for a prescribed medication."
+      },
+      {
+        "name": "Enrolled in care program",
+        "direction": "decreases_risk",
+        "weight": 0.09,
+        "evidence": "Member is actively enrolled in a care management program."
+      },
+      {
+        "name": "Multiple chronic conditions",
+        "direction": "increases_risk",
+        "weight": 0.26,
+        "evidence": "Three long term conditions are recorded in the care summary."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_hea_005",
+    "case_id": "healthcare_readmission_005",
+    "risk_score": 0.71,
+    "risk_band": "high",
+    "model_name": "readmission_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Multiple chronic conditions",
+        "direction": "increases_risk",
+        "weight": 0.21,
+        "evidence": "Three long term conditions are recorded in the care summary."
+      },
+      {
+        "name": "Missed follow up appointment",
+        "direction": "increases_risk",
+        "weight": 0.14,
+        "evidence": "One scheduled follow up appointment was not attended last month."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_hea_006",
+    "case_id": "healthcare_readmission_006",
+    "risk_score": 0.72,
+    "risk_band": "high",
+    "model_name": "readmission_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Stable vitals at last visit",
+        "direction": "decreases_risk",
+        "weight": 0.16,
+        "evidence": "Vital signs were within the expected range at the most recent visit."
+      },
+      {
+        "name": "Medication refill gap",
+        "direction": "increases_risk",
+        "weight": 0.23,
+        "evidence": "A refill gap of twenty one days was detected for a prescribed medication."
+      },
+      {
+        "name": "Recent emergency visit",
+        "direction": "increases_risk",
+        "weight": 0.29,
+        "evidence": "Member had two emergency visits in the last sixty days."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_hea_007",
+    "case_id": "healthcare_readmission_007",
+    "risk_score": 0.69,
+    "risk_band": "high",
+    "model_name": "readmission_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Enrolled in care program",
+        "direction": "decreases_risk",
+        "weight": 0.09,
+        "evidence": "Member is actively enrolled in a care management program."
+      },
+      {
+        "name": "Recent emergency visit",
+        "direction": "increases_risk",
+        "weight": 0.32,
+        "evidence": "Member had two emergency visits in the last sixty days."
+      },
+      {
+        "name": "Stable vitals at last visit",
+        "direction": "decreases_risk",
+        "weight": 0.14,
+        "evidence": "Vital signs were within the expected range at the most recent visit."
+      },
+      {
+        "name": "Multiple chronic conditions",
+        "direction": "increases_risk",
+        "weight": 0.23,
+        "evidence": "Three long term conditions are recorded in the care summary."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_hea_008",
+    "case_id": "healthcare_readmission_008",
+    "risk_score": 0.9,
+    "risk_band": "high",
+    "model_name": "readmission_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Missed follow up appointment",
+        "direction": "increases_risk",
+        "weight": 0.21,
+        "evidence": "One scheduled follow up appointment was not attended last month."
+      },
+      {
+        "name": "Multiple chronic conditions",
+        "direction": "increases_risk",
+        "weight": 0.27,
+        "evidence": "Three long term conditions are recorded in the care summary."
+      },
+      {
+        "name": "Stable vitals at last visit",
+        "direction": "decreases_risk",
+        "weight": 0.12,
+        "evidence": "Vital signs were within the expected range at the most recent visit."
+      },
+      {
+        "name": "Recent emergency visit",
+        "direction": "increases_risk",
+        "weight": 0.31,
+        "evidence": "Member had two emergency visits in the last sixty days."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_hea_009",
+    "case_id": "healthcare_readmission_009",
+    "risk_score": 0.78,
+    "risk_band": "high",
+    "model_name": "readmission_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Missed follow up appointment",
+        "direction": "increases_risk",
+        "weight": 0.19,
+        "evidence": "One scheduled follow up appointment was not attended last month."
+      },
+      {
+        "name": "Multiple chronic conditions",
+        "direction": "increases_risk",
+        "weight": 0.21,
+        "evidence": "Three long term conditions are recorded in the care summary."
+      },
+      {
+        "name": "Enrolled in care program",
+        "direction": "decreases_risk",
+        "weight": 0.12,
+        "evidence": "Member is actively enrolled in a care management program."
+      },
+      {
+        "name": "Medication refill gap",
+        "direction": "increases_risk",
+        "weight": 0.19,
+        "evidence": "A refill gap of twenty one days was detected for a prescribed medication."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_hea_010",
+    "case_id": "healthcare_readmission_010",
+    "risk_score": 0.61,
+    "risk_band": "medium",
+    "model_name": "readmission_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Medication refill gap",
+        "direction": "increases_risk",
+        "weight": 0.17,
+        "evidence": "A refill gap of twenty one days was detected for a prescribed medication."
+      },
+      {
+        "name": "Missed follow up appointment",
+        "direction": "increases_risk",
+        "weight": 0.2,
+        "evidence": "One scheduled follow up appointment was not attended last month."
+      },
+      {
+        "name": "Stable vitals at last visit",
+        "direction": "decreases_risk",
+        "weight": 0.18,
+        "evidence": "Vital signs were within the expected range at the most recent visit."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_hea_011",
+    "case_id": "healthcare_readmission_011",
+    "risk_score": 0.58,
+    "risk_band": "medium",
+    "model_name": "readmission_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Multiple chronic conditions",
+        "direction": "increases_risk",
+        "weight": 0.25,
+        "evidence": "Three long term conditions are recorded in the care summary."
+      },
+      {
+        "name": "Enrolled in care program",
+        "direction": "decreases_risk",
+        "weight": 0.15,
+        "evidence": "Member is actively enrolled in a care management program."
+      },
+      {
+        "name": "Stable vitals at last visit",
+        "direction": "decreases_risk",
+        "weight": 0.11,
+        "evidence": "Vital signs were within the expected range at the most recent visit."
+      },
+      {
+        "name": "Missed follow up appointment",
+        "direction": "increases_risk",
+        "weight": 0.14,
+        "evidence": "One scheduled follow up appointment was not attended last month."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_hea_012",
+    "case_id": "healthcare_readmission_012",
+    "risk_score": 0.69,
+    "risk_band": "high",
+    "model_name": "readmission_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Missed follow up appointment",
+        "direction": "increases_risk",
+        "weight": 0.2,
+        "evidence": "One scheduled follow up appointment was not attended last month."
+      },
+      {
+        "name": "Recent emergency visit",
+        "direction": "increases_risk",
+        "weight": 0.28,
+        "evidence": "Member had two emergency visits in the last sixty days."
+      },
+      {
+        "name": "Stable vitals at last visit",
+        "direction": "decreases_risk",
+        "weight": 0.16,
+        "evidence": "Vital signs were within the expected range at the most recent visit."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_ins_001",
+    "case_id": "insurance_claim_001",
+    "risk_score": 0.61,
+    "risk_band": "medium",
+    "model_name": "claim_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Incomplete documentation",
+        "direction": "increases_risk",
+        "weight": 0.14,
+        "evidence": "Required supporting documents were missing from the initial submission."
+      },
+      {
+        "name": "Multiple claims this year",
+        "direction": "increases_risk",
+        "weight": 0.28,
+        "evidence": "Four separate claims have been filed in the current policy year."
+      },
+      {
+        "name": "Verified provider",
+        "direction": "decreases_risk",
+        "weight": 0.09,
+        "evidence": "The service provider is on the verified in network list."
+      },
+      {
+        "name": "Long tenure with insurer",
+        "direction": "decreases_risk",
+        "weight": 0.15,
+        "evidence": "The policy has been active and in good standing for eight years."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_ins_002",
+    "case_id": "insurance_claim_002",
+    "risk_score": 0.88,
+    "risk_band": "high",
+    "model_name": "claim_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "High claim amount",
+        "direction": "increases_risk",
+        "weight": 0.24,
+        "evidence": "The submitted claim amount is well above the average for this policy type."
+      },
+      {
+        "name": "Recent policy change",
+        "direction": "increases_risk",
+        "weight": 0.17,
+        "evidence": "The policy coverage was changed within the last thirty days before the claim."
+      },
+      {
+        "name": "Multiple claims this year",
+        "direction": "increases_risk",
+        "weight": 0.23,
+        "evidence": "Four separate claims have been filed in the current policy year."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_ins_003",
+    "case_id": "insurance_claim_003",
+    "risk_score": 0.84,
+    "risk_band": "high",
+    "model_name": "claim_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "High claim amount",
+        "direction": "increases_risk",
+        "weight": 0.27,
+        "evidence": "The submitted claim amount is well above the average for this policy type."
+      },
+      {
+        "name": "Recent policy change",
+        "direction": "increases_risk",
+        "weight": 0.18,
+        "evidence": "The policy coverage was changed within the last thirty days before the claim."
+      },
+      {
+        "name": "Incomplete documentation",
+        "direction": "increases_risk",
+        "weight": 0.12,
+        "evidence": "Required supporting documents were missing from the initial submission."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_ins_004",
+    "case_id": "insurance_claim_004",
+    "risk_score": 0.63,
+    "risk_band": "medium",
+    "model_name": "claim_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Long tenure with insurer",
+        "direction": "decreases_risk",
+        "weight": 0.19,
+        "evidence": "The policy has been active and in good standing for eight years."
+      },
+      {
+        "name": "Multiple claims this year",
+        "direction": "increases_risk",
+        "weight": 0.26,
+        "evidence": "Four separate claims have been filed in the current policy year."
+      },
+      {
+        "name": "Incomplete documentation",
+        "direction": "increases_risk",
+        "weight": 0.15,
+        "evidence": "Required supporting documents were missing from the initial submission."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_ins_005",
+    "case_id": "insurance_claim_005",
+    "risk_score": 0.75,
+    "risk_band": "high",
+    "model_name": "claim_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Recent policy change",
+        "direction": "increases_risk",
+        "weight": 0.17,
+        "evidence": "The policy coverage was changed within the last thirty days before the claim."
+      },
+      {
+        "name": "High claim amount",
+        "direction": "increases_risk",
+        "weight": 0.25,
+        "evidence": "The submitted claim amount is well above the average for this policy type."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_ins_006",
+    "case_id": "insurance_claim_006",
+    "risk_score": 0.76,
+    "risk_band": "high",
+    "model_name": "claim_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "High claim amount",
+        "direction": "increases_risk",
+        "weight": 0.31,
+        "evidence": "The submitted claim amount is well above the average for this policy type."
+      },
+      {
+        "name": "Incomplete documentation",
+        "direction": "increases_risk",
+        "weight": 0.13,
+        "evidence": "Required supporting documents were missing from the initial submission."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_ins_007",
+    "case_id": "insurance_claim_007",
+    "risk_score": 0.88,
+    "risk_band": "high",
+    "model_name": "claim_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "High claim amount",
+        "direction": "increases_risk",
+        "weight": 0.28,
+        "evidence": "The submitted claim amount is well above the average for this policy type."
+      },
+      {
+        "name": "Recent policy change",
+        "direction": "increases_risk",
+        "weight": 0.21,
+        "evidence": "The policy coverage was changed within the last thirty days before the claim."
+      },
+      {
+        "name": "Incomplete documentation",
+        "direction": "increases_risk",
+        "weight": 0.14,
+        "evidence": "Required supporting documents were missing from the initial submission."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_ins_008",
+    "case_id": "insurance_claim_008",
+    "risk_score": 0.31,
+    "risk_band": "low",
+    "model_name": "claim_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Verified provider",
+        "direction": "decreases_risk",
+        "weight": 0.15,
+        "evidence": "The service provider is on the verified in network list."
+      },
+      {
+        "name": "Long tenure with insurer",
+        "direction": "decreases_risk",
+        "weight": 0.16,
+        "evidence": "The policy has been active and in good standing for eight years."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_ins_009",
+    "case_id": "insurance_claim_009",
+    "risk_score": 0.74,
+    "risk_band": "high",
+    "model_name": "claim_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "High claim amount",
+        "direction": "increases_risk",
+        "weight": 0.27,
+        "evidence": "The submitted claim amount is well above the average for this policy type."
+      },
+      {
+        "name": "Incomplete documentation",
+        "direction": "increases_risk",
+        "weight": 0.12,
+        "evidence": "Required supporting documents were missing from the initial submission."
+      },
+      {
+        "name": "Long tenure with insurer",
+        "direction": "decreases_risk",
+        "weight": 0.15,
+        "evidence": "The policy has been active and in good standing for eight years."
+      },
+      {
+        "name": "Recent policy change",
+        "direction": "increases_risk",
+        "weight": 0.16,
+        "evidence": "The policy coverage was changed within the last thirty days before the claim."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_ins_010",
+    "case_id": "insurance_claim_010",
+    "risk_score": 0.69,
+    "risk_band": "high",
+    "model_name": "claim_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Recent policy change",
+        "direction": "increases_risk",
+        "weight": 0.17,
+        "evidence": "The policy coverage was changed within the last thirty days before the claim."
+      },
+      {
+        "name": "Incomplete documentation",
+        "direction": "increases_risk",
+        "weight": 0.14,
+        "evidence": "Required supporting documents were missing from the initial submission."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_ins_011",
+    "case_id": "insurance_claim_011",
+    "risk_score": 0.61,
+    "risk_band": "medium",
+    "model_name": "claim_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "High claim amount",
+        "direction": "increases_risk",
+        "weight": 0.29,
+        "evidence": "The submitted claim amount is well above the average for this policy type."
+      },
+      {
+        "name": "Verified provider",
+        "direction": "decreases_risk",
+        "weight": 0.1,
+        "evidence": "The service provider is on the verified in network list."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_ins_012",
+    "case_id": "insurance_claim_012",
+    "risk_score": 0.53,
+    "risk_band": "medium",
+    "model_name": "claim_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Long tenure with insurer",
+        "direction": "decreases_risk",
+        "weight": 0.18,
+        "evidence": "The policy has been active and in good standing for eight years."
+      },
+      {
+        "name": "High claim amount",
+        "direction": "increases_risk",
+        "weight": 0.29,
+        "evidence": "The submitted claim amount is well above the average for this policy type."
+      },
+      {
+        "name": "Verified provider",
+        "direction": "decreases_risk",
+        "weight": 0.06,
+        "evidence": "The service provider is on the verified in network list."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_cre_001",
+    "case_id": "credit_risk_001",
+    "risk_score": 0.47,
+    "risk_band": "medium",
+    "model_name": "credit_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Short credit history",
+        "direction": "increases_risk",
+        "weight": 0.18,
+        "evidence": "The credit file has been open for less than two years."
+      },
+      {
+        "name": "Stable income on file",
+        "direction": "decreases_risk",
+        "weight": 0.11,
+        "evidence": "A consistent monthly income has been verified for two years."
+      },
+      {
+        "name": "Low total balance",
+        "direction": "decreases_risk",
+        "weight": 0.12,
+        "evidence": "The total outstanding balance is small relative to available credit."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_cre_002",
+    "case_id": "credit_risk_002",
+    "risk_score": 0.62,
+    "risk_band": "medium",
+    "model_name": "credit_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Multiple recent inquiries",
+        "direction": "increases_risk",
+        "weight": 0.12,
+        "evidence": "Five hard inquiries were recorded in the last six months."
+      },
+      {
+        "name": "Low total balance",
+        "direction": "decreases_risk",
+        "weight": 0.08,
+        "evidence": "The total outstanding balance is small relative to available credit."
+      },
+      {
+        "name": "Short credit history",
+        "direction": "increases_risk",
+        "weight": 0.16,
+        "evidence": "The credit file has been open for less than two years."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_cre_003",
+    "case_id": "credit_risk_003",
+    "risk_score": 0.94,
+    "risk_band": "high",
+    "model_name": "credit_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Multiple recent inquiries",
+        "direction": "increases_risk",
+        "weight": 0.13,
+        "evidence": "Five hard inquiries were recorded in the last six months."
+      },
+      {
+        "name": "Recent missed payment",
+        "direction": "increases_risk",
+        "weight": 0.31,
+        "evidence": "One payment was reported as thirty days late in the last quarter."
+      },
+      {
+        "name": "High credit utilization",
+        "direction": "increases_risk",
+        "weight": 0.29,
+        "evidence": "Reported revolving credit utilization is above eighty percent."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_cre_004",
+    "case_id": "credit_risk_004",
+    "risk_score": 0.76,
+    "risk_band": "high",
+    "model_name": "credit_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Stable income on file",
+        "direction": "decreases_risk",
+        "weight": 0.19,
+        "evidence": "A consistent monthly income has been verified for two years."
+      },
+      {
+        "name": "High credit utilization",
+        "direction": "increases_risk",
+        "weight": 0.32,
+        "evidence": "Reported revolving credit utilization is above eighty percent."
+      },
+      {
+        "name": "Short credit history",
+        "direction": "increases_risk",
+        "weight": 0.16,
+        "evidence": "The credit file has been open for less than two years."
+      },
+      {
+        "name": "Multiple recent inquiries",
+        "direction": "increases_risk",
+        "weight": 0.15,
+        "evidence": "Five hard inquiries were recorded in the last six months."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_cre_005",
+    "case_id": "credit_risk_005",
+    "risk_score": 0.78,
+    "risk_band": "high",
+    "model_name": "credit_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Short credit history",
+        "direction": "increases_risk",
+        "weight": 0.18,
+        "evidence": "The credit file has been open for less than two years."
+      },
+      {
+        "name": "Recent missed payment",
+        "direction": "increases_risk",
+        "weight": 0.29,
+        "evidence": "One payment was reported as thirty days late in the last quarter."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_cre_006",
+    "case_id": "credit_risk_006",
+    "risk_score": 0.48,
+    "risk_band": "medium",
+    "model_name": "credit_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Low total balance",
+        "direction": "decreases_risk",
+        "weight": 0.15,
+        "evidence": "The total outstanding balance is small relative to available credit."
+      },
+      {
+        "name": "Recent missed payment",
+        "direction": "increases_risk",
+        "weight": 0.29,
+        "evidence": "One payment was reported as thirty days late in the last quarter."
+      },
+      {
+        "name": "Stable income on file",
+        "direction": "decreases_risk",
+        "weight": 0.17,
+        "evidence": "A consistent monthly income has been verified for two years."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_cre_007",
+    "case_id": "credit_risk_007",
+    "risk_score": 0.55,
+    "risk_band": "medium",
+    "model_name": "credit_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Recent missed payment",
+        "direction": "increases_risk",
+        "weight": 0.26,
+        "evidence": "One payment was reported as thirty days late in the last quarter."
+      },
+      {
+        "name": "Stable income on file",
+        "direction": "decreases_risk",
+        "weight": 0.17,
+        "evidence": "A consistent monthly income has been verified for two years."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_cre_008",
+    "case_id": "credit_risk_008",
+    "risk_score": 0.7,
+    "risk_band": "high",
+    "model_name": "credit_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Short credit history",
+        "direction": "increases_risk",
+        "weight": 0.16,
+        "evidence": "The credit file has been open for less than two years."
+      },
+      {
+        "name": "Multiple recent inquiries",
+        "direction": "increases_risk",
+        "weight": 0.18,
+        "evidence": "Five hard inquiries were recorded in the last six months."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_cre_009",
+    "case_id": "credit_risk_009",
+    "risk_score": 0.57,
+    "risk_band": "medium",
+    "model_name": "credit_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Multiple recent inquiries",
+        "direction": "increases_risk",
+        "weight": 0.12,
+        "evidence": "Five hard inquiries were recorded in the last six months."
+      },
+      {
+        "name": "Short credit history",
+        "direction": "increases_risk",
+        "weight": 0.14,
+        "evidence": "The credit file has been open for less than two years."
+      },
+      {
+        "name": "Stable income on file",
+        "direction": "decreases_risk",
+        "weight": 0.15,
+        "evidence": "A consistent monthly income has been verified for two years."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_cre_010",
+    "case_id": "credit_risk_010",
+    "risk_score": 0.96,
+    "risk_band": "high",
+    "model_name": "credit_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Recent missed payment",
+        "direction": "increases_risk",
+        "weight": 0.26,
+        "evidence": "One payment was reported as thirty days late in the last quarter."
+      },
+      {
+        "name": "Multiple recent inquiries",
+        "direction": "increases_risk",
+        "weight": 0.18,
+        "evidence": "Five hard inquiries were recorded in the last six months."
+      },
+      {
+        "name": "High credit utilization",
+        "direction": "increases_risk",
+        "weight": 0.33,
+        "evidence": "Reported revolving credit utilization is above eighty percent."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_cre_011",
+    "case_id": "credit_risk_011",
+    "risk_score": 0.6,
+    "risk_band": "medium",
+    "model_name": "credit_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Low total balance",
+        "direction": "decreases_risk",
+        "weight": 0.16,
+        "evidence": "The total outstanding balance is small relative to available credit."
+      },
+      {
+        "name": "High credit utilization",
+        "direction": "increases_risk",
+        "weight": 0.33,
+        "evidence": "Reported revolving credit utilization is above eighty percent."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_cre_012",
+    "case_id": "credit_risk_012",
+    "risk_score": 0.75,
+    "risk_band": "high",
+    "model_name": "credit_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Multiple recent inquiries",
+        "direction": "increases_risk",
+        "weight": 0.15,
+        "evidence": "Five hard inquiries were recorded in the last six months."
+      },
+      {
+        "name": "Recent missed payment",
+        "direction": "increases_risk",
+        "weight": 0.27,
+        "evidence": "One payment was reported as thirty days late in the last quarter."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_fra_001",
+    "case_id": "fraud_risk_001",
+    "risk_score": 0.55,
+    "risk_band": "medium",
+    "model_name": "fraud_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Transaction within usual range",
+        "direction": "decreases_risk",
+        "weight": 0.11,
+        "evidence": "The transaction amount is consistent with the typical spending pattern."
+      },
+      {
+        "name": "Mismatched billing details",
+        "direction": "increases_risk",
+        "weight": 0.2,
+        "evidence": "The billing postal code did not match the records on file."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_fra_002",
+    "case_id": "fraud_risk_002",
+    "risk_score": 0.59,
+    "risk_band": "medium",
+    "model_name": "fraud_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Transaction within usual range",
+        "direction": "decreases_risk",
+        "weight": 0.08,
+        "evidence": "The transaction amount is consistent with the typical spending pattern."
+      },
+      {
+        "name": "Rapid successive transactions",
+        "direction": "increases_risk",
+        "weight": 0.23,
+        "evidence": "Six transactions were attempted within two minutes."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_fra_003",
+    "case_id": "fraud_risk_003",
+    "risk_score": 0.49,
+    "risk_band": "medium",
+    "model_name": "fraud_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Long standing account",
+        "direction": "decreases_risk",
+        "weight": 0.16,
+        "evidence": "The account has a five year history with no prior disputes."
+      },
+      {
+        "name": "Mismatched billing details",
+        "direction": "increases_risk",
+        "weight": 0.14,
+        "evidence": "The billing postal code did not match the records on file."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_fra_004",
+    "case_id": "fraud_risk_004",
+    "risk_score": 0.79,
+    "risk_band": "high",
+    "model_name": "fraud_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Mismatched billing details",
+        "direction": "increases_risk",
+        "weight": 0.18,
+        "evidence": "The billing postal code did not match the records on file."
+      },
+      {
+        "name": "New device login",
+        "direction": "increases_risk",
+        "weight": 0.15,
+        "evidence": "The session originated from a device not previously linked to the account."
+      },
+      {
+        "name": "Rapid successive transactions",
+        "direction": "increases_risk",
+        "weight": 0.3,
+        "evidence": "Six transactions were attempted within two minutes."
+      },
+      {
+        "name": "Long standing account",
+        "direction": "decreases_risk",
+        "weight": 0.15,
+        "evidence": "The account has a five year history with no prior disputes."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_fra_005",
+    "case_id": "fraud_risk_005",
+    "risk_score": 0.61,
+    "risk_band": "medium",
+    "model_name": "fraud_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Long standing account",
+        "direction": "decreases_risk",
+        "weight": 0.12,
+        "evidence": "The account has a five year history with no prior disputes."
+      },
+      {
+        "name": "Rapid successive transactions",
+        "direction": "increases_risk",
+        "weight": 0.31,
+        "evidence": "Six transactions were attempted within two minutes."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_fra_006",
+    "case_id": "fraud_risk_006",
+    "risk_score": 0.79,
+    "risk_band": "high",
+    "model_name": "fraud_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Unusual transaction location",
+        "direction": "increases_risk",
+        "weight": 0.29,
+        "evidence": "A transaction occurred in a country not previously seen on the account."
+      },
+      {
+        "name": "New device login",
+        "direction": "increases_risk",
+        "weight": 0.2,
+        "evidence": "The session originated from a device not previously linked to the account."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_fra_007",
+    "case_id": "fraud_risk_007",
+    "risk_score": 0.85,
+    "risk_band": "high",
+    "model_name": "fraud_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "New device login",
+        "direction": "increases_risk",
+        "weight": 0.16,
+        "evidence": "The session originated from a device not previously linked to the account."
+      },
+      {
+        "name": "Transaction within usual range",
+        "direction": "decreases_risk",
+        "weight": 0.13,
+        "evidence": "The transaction amount is consistent with the typical spending pattern."
+      },
+      {
+        "name": "Mismatched billing details",
+        "direction": "increases_risk",
+        "weight": 0.22,
+        "evidence": "The billing postal code did not match the records on file."
+      },
+      {
+        "name": "Unusual transaction location",
+        "direction": "increases_risk",
+        "weight": 0.34,
+        "evidence": "A transaction occurred in a country not previously seen on the account."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_fra_008",
+    "case_id": "fraud_risk_008",
+    "risk_score": 0.84,
+    "risk_band": "high",
+    "model_name": "fraud_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Mismatched billing details",
+        "direction": "increases_risk",
+        "weight": 0.15,
+        "evidence": "The billing postal code did not match the records on file."
+      },
+      {
+        "name": "Long standing account",
+        "direction": "decreases_risk",
+        "weight": 0.13,
+        "evidence": "The account has a five year history with no prior disputes."
+      },
+      {
+        "name": "Rapid successive transactions",
+        "direction": "increases_risk",
+        "weight": 0.31,
+        "evidence": "Six transactions were attempted within two minutes."
+      },
+      {
+        "name": "New device login",
+        "direction": "increases_risk",
+        "weight": 0.23,
+        "evidence": "The session originated from a device not previously linked to the account."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_fra_009",
+    "case_id": "fraud_risk_009",
+    "risk_score": 0.73,
+    "risk_band": "high",
+    "model_name": "fraud_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Unusual transaction location",
+        "direction": "increases_risk",
+        "weight": 0.32,
+        "evidence": "A transaction occurred in a country not previously seen on the account."
+      },
+      {
+        "name": "Rapid successive transactions",
+        "direction": "increases_risk",
+        "weight": 0.29,
+        "evidence": "Six transactions were attempted within two minutes."
+      },
+      {
+        "name": "Long standing account",
+        "direction": "decreases_risk",
+        "weight": 0.14,
+        "evidence": "The account has a five year history with no prior disputes."
+      },
+      {
+        "name": "Transaction within usual range",
+        "direction": "decreases_risk",
+        "weight": 0.09,
+        "evidence": "The transaction amount is consistent with the typical spending pattern."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_fra_010",
+    "case_id": "fraud_risk_010",
+    "risk_score": 0.61,
+    "risk_band": "medium",
+    "model_name": "fraud_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Long standing account",
+        "direction": "decreases_risk",
+        "weight": 0.17,
+        "evidence": "The account has a five year history with no prior disputes."
+      },
+      {
+        "name": "Transaction within usual range",
+        "direction": "decreases_risk",
+        "weight": 0.07,
+        "evidence": "The transaction amount is consistent with the typical spending pattern."
+      },
+      {
+        "name": "Mismatched billing details",
+        "direction": "increases_risk",
+        "weight": 0.15,
+        "evidence": "The billing postal code did not match the records on file."
+      },
+      {
+        "name": "Unusual transaction location",
+        "direction": "increases_risk",
+        "weight": 0.27,
+        "evidence": "A transaction occurred in a country not previously seen on the account."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_fra_011",
+    "case_id": "fraud_risk_011",
+    "risk_score": 0.54,
+    "risk_band": "medium",
+    "model_name": "fraud_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Long standing account",
+        "direction": "decreases_risk",
+        "weight": 0.14,
+        "evidence": "The account has a five year history with no prior disputes."
+      },
+      {
+        "name": "Mismatched billing details",
+        "direction": "increases_risk",
+        "weight": 0.21,
+        "evidence": "The billing postal code did not match the records on file."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_fra_012",
+    "case_id": "fraud_risk_012",
+    "risk_score": 0.73,
+    "risk_band": "high",
+    "model_name": "fraud_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Mismatched billing details",
+        "direction": "increases_risk",
+        "weight": 0.19,
+        "evidence": "The billing postal code did not match the records on file."
+      },
+      {
+        "name": "New device login",
+        "direction": "increases_risk",
+        "weight": 0.2,
+        "evidence": "The session originated from a device not previously linked to the account."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_ope_001",
+    "case_id": "operational_risk_001",
+    "risk_score": 0.79,
+    "risk_band": "high",
+    "model_name": "operational_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Aging open tickets",
+        "direction": "increases_risk",
+        "weight": 0.23,
+        "evidence": "Multiple support tickets have remained open past the target resolution time."
+      },
+      {
+        "name": "Single point of dependency",
+        "direction": "increases_risk",
+        "weight": 0.21,
+        "evidence": "A critical step depends on one unbacked component."
+      },
+      {
+        "name": "Recent configuration change",
+        "direction": "increases_risk",
+        "weight": 0.21,
+        "evidence": "A configuration change was deployed shortly before the incident window."
+      },
+      {
+        "name": "Documented runbook exists",
+        "direction": "decreases_risk",
+        "weight": 0.16,
+        "evidence": "A current runbook is available for the affected process."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_ope_002",
+    "case_id": "operational_risk_002",
+    "risk_score": 0.65,
+    "risk_band": "medium",
+    "model_name": "operational_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Documented runbook exists",
+        "direction": "decreases_risk",
+        "weight": 0.1,
+        "evidence": "A current runbook is available for the affected process."
+      },
+      {
+        "name": "Aging open tickets",
+        "direction": "increases_risk",
+        "weight": 0.19,
+        "evidence": "Multiple support tickets have remained open past the target resolution time."
+      },
+      {
+        "name": "Recent configuration change",
+        "direction": "increases_risk",
+        "weight": 0.16,
+        "evidence": "A configuration change was deployed shortly before the incident window."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_ope_003",
+    "case_id": "operational_risk_003",
+    "risk_score": 0.55,
+    "risk_band": "medium",
+    "model_name": "operational_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Redundant capacity available",
+        "direction": "decreases_risk",
+        "weight": 0.11,
+        "evidence": "Spare capacity is provisioned and verified for failover."
+      },
+      {
+        "name": "Aging open tickets",
+        "direction": "increases_risk",
+        "weight": 0.2,
+        "evidence": "Multiple support tickets have remained open past the target resolution time."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_ope_004",
+    "case_id": "operational_risk_004",
+    "risk_score": 0.97,
+    "risk_band": "high",
+    "model_name": "operational_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Repeated process exceptions",
+        "direction": "increases_risk",
+        "weight": 0.25,
+        "evidence": "The workflow recorded several manual exception overrides this week."
+      },
+      {
+        "name": "Aging open tickets",
+        "direction": "increases_risk",
+        "weight": 0.27,
+        "evidence": "Multiple support tickets have remained open past the target resolution time."
+      },
+      {
+        "name": "Single point of dependency",
+        "direction": "increases_risk",
+        "weight": 0.26,
+        "evidence": "A critical step depends on one unbacked component."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_ope_005",
+    "case_id": "operational_risk_005",
+    "risk_score": 0.61,
+    "risk_band": "medium",
+    "model_name": "operational_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Redundant capacity available",
+        "direction": "decreases_risk",
+        "weight": 0.11,
+        "evidence": "Spare capacity is provisioned and verified for failover."
+      },
+      {
+        "name": "Repeated process exceptions",
+        "direction": "increases_risk",
+        "weight": 0.29,
+        "evidence": "The workflow recorded several manual exception overrides this week."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_ope_006",
+    "case_id": "operational_risk_006",
+    "risk_score": 0.76,
+    "risk_band": "high",
+    "model_name": "operational_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Aging open tickets",
+        "direction": "increases_risk",
+        "weight": 0.22,
+        "evidence": "Multiple support tickets have remained open past the target resolution time."
+      },
+      {
+        "name": "Redundant capacity available",
+        "direction": "decreases_risk",
+        "weight": 0.11,
+        "evidence": "Spare capacity is provisioned and verified for failover."
+      },
+      {
+        "name": "Recent configuration change",
+        "direction": "increases_risk",
+        "weight": 0.16,
+        "evidence": "A configuration change was deployed shortly before the incident window."
+      },
+      {
+        "name": "Single point of dependency",
+        "direction": "increases_risk",
+        "weight": 0.17,
+        "evidence": "A critical step depends on one unbacked component."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_ope_007",
+    "case_id": "operational_risk_007",
+    "risk_score": 0.85,
+    "risk_band": "high",
+    "model_name": "operational_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Repeated process exceptions",
+        "direction": "increases_risk",
+        "weight": 0.28,
+        "evidence": "The workflow recorded several manual exception overrides this week."
+      },
+      {
+        "name": "Single point of dependency",
+        "direction": "increases_risk",
+        "weight": 0.16,
+        "evidence": "A critical step depends on one unbacked component."
+      },
+      {
+        "name": "Recent configuration change",
+        "direction": "increases_risk",
+        "weight": 0.15,
+        "evidence": "A configuration change was deployed shortly before the incident window."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_ope_008",
+    "case_id": "operational_risk_008",
+    "risk_score": 0.84,
+    "risk_band": "high",
+    "model_name": "operational_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Single point of dependency",
+        "direction": "increases_risk",
+        "weight": 0.26,
+        "evidence": "A critical step depends on one unbacked component."
+      },
+      {
+        "name": "Documented runbook exists",
+        "direction": "decreases_risk",
+        "weight": 0.17,
+        "evidence": "A current runbook is available for the affected process."
+      },
+      {
+        "name": "Repeated process exceptions",
+        "direction": "increases_risk",
+        "weight": 0.34,
+        "evidence": "The workflow recorded several manual exception overrides this week."
+      },
+      {
+        "name": "Recent configuration change",
+        "direction": "increases_risk",
+        "weight": 0.13,
+        "evidence": "A configuration change was deployed shortly before the incident window."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_ope_009",
+    "case_id": "operational_risk_009",
+    "risk_score": 0.9,
+    "risk_band": "high",
+    "model_name": "operational_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Single point of dependency",
+        "direction": "increases_risk",
+        "weight": 0.19,
+        "evidence": "A critical step depends on one unbacked component."
+      },
+      {
+        "name": "Repeated process exceptions",
+        "direction": "increases_risk",
+        "weight": 0.25,
+        "evidence": "The workflow recorded several manual exception overrides this week."
+      },
+      {
+        "name": "Aging open tickets",
+        "direction": "increases_risk",
+        "weight": 0.22,
+        "evidence": "Multiple support tickets have remained open past the target resolution time."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_ope_010",
+    "case_id": "operational_risk_010",
+    "risk_score": 0.86,
+    "risk_band": "high",
+    "model_name": "operational_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Single point of dependency",
+        "direction": "increases_risk",
+        "weight": 0.25,
+        "evidence": "A critical step depends on one unbacked component."
+      },
+      {
+        "name": "Recent configuration change",
+        "direction": "increases_risk",
+        "weight": 0.18,
+        "evidence": "A configuration change was deployed shortly before the incident window."
+      },
+      {
+        "name": "Aging open tickets",
+        "direction": "increases_risk",
+        "weight": 0.25,
+        "evidence": "Multiple support tickets have remained open past the target resolution time."
+      },
+      {
+        "name": "Redundant capacity available",
+        "direction": "decreases_risk",
+        "weight": 0.08,
+        "evidence": "Spare capacity is provisioned and verified for failover."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_ope_011",
+    "case_id": "operational_risk_011",
+    "risk_score": 0.55,
+    "risk_band": "medium",
+    "model_name": "operational_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Redundant capacity available",
+        "direction": "decreases_risk",
+        "weight": 0.11,
+        "evidence": "Spare capacity is provisioned and verified for failover."
+      },
+      {
+        "name": "Aging open tickets",
+        "direction": "increases_risk",
+        "weight": 0.19,
+        "evidence": "Multiple support tickets have remained open past the target resolution time."
+      }
+    ]
+  },
+  {
+    "member_id": "mem_ope_012",
+    "case_id": "operational_risk_012",
+    "risk_score": 0.56,
+    "risk_band": "medium",
+    "model_name": "operational_risk_v1",
+    "model_version": "2026.01",
+    "factors": [
+      {
+        "name": "Redundant capacity available",
+        "direction": "decreases_risk",
+        "weight": 0.15,
+        "evidence": "Spare capacity is provisioned and verified for failover."
+      },
+      {
+        "name": "Repeated process exceptions",
+        "direction": "increases_risk",
+        "weight": 0.25,
+        "evidence": "The workflow recorded several manual exception overrides this week."
+      }
+    ]
+  }
+]
