@@ -22,6 +22,16 @@ class CaseNotFoundError(ModelLensError):
     code = "case_not_found"
 
 
+class CaseAlreadyExistsError(ModelLensError):
+    status_code = 409
+    code = "case_already_exists"
+
+
+class ExplanationNotFoundError(ModelLensError):
+    status_code = 404
+    code = "explanation_not_found"
+
+
 class ExplanationGenerationError(ModelLensError):
     status_code = 502
     code = "explanation_generation_failed"

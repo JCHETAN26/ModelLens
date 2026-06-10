@@ -68,6 +68,11 @@ class RiskCaseRecord(TimestampMixin, Base):
         back_populates="risk_case", cascade="all, delete-orphan"
     )
 
+    @property
+    def member_id(self) -> str:
+        """Flat accessor for the business member identifier (for read schemas)."""
+        return self.member.member_id
+
 
 class RiskFactorRecord(TimestampMixin, Base):
     __tablename__ = "risk_factors"
