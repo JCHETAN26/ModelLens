@@ -5,7 +5,7 @@ from __future__ import annotations
 from fastapi import FastAPI
 
 from app import __version__
-from app.api import routes_health
+from app.api import routes_cases, routes_health
 from app.core.errors import ModelLensError, modellens_error_handler
 from app.core.logging import configure_logging
 
@@ -26,6 +26,7 @@ def create_app() -> FastAPI:
     app.add_exception_handler(ModelLensError, modellens_error_handler)
 
     app.include_router(routes_health.router)
+    app.include_router(routes_cases.router)
 
     return app
 

@@ -13,6 +13,7 @@ from pathlib import Path
 import pytest
 from alembic import command
 from alembic.config import Config
+from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session, sessionmaker
 
@@ -27,7 +28,8 @@ def _alembic_config(url: str) -> Config:
 
 
 @pytest.fixture
-def db_session(tmp_path: Path) -> Iterator[Session]:
+def session_factory(tmp_path: Path) -> Iterator[sessionmaker[Session]]:
+    """A migrated, isolated SQLite database exposed as a session factory."""
     db_file = tmp_path / "test.db"
     url = f"sqlite:///{db_file}"
 
@@ -35,10 +37,41 @@ def db_session(tmp_path: Path) -> Iterator[Session]:
 
     engine = create_engine(url, connect_args={"check_same_thread": False})
     factory = sessionmaker(bind=engine, expire_on_commit=False)
-    session = factory()
+    try:
+        yield factory
+    finally:
+        engine.dispose()
+        os.environ.pop("ALEMBIC_URL", None)
+
+
+@pytest.fixture
+def db_session(session_factory: sessionmaker[Session]) -> Iterator[Session]:
+    session = session_factory()
     try:
         yield session
     finally:
         session.close()
-        engine.dispose()
-        os.environ.pop("ALEMBIC_URL", None)
+
+
+@pytest.fixture
+def client(session_factory: sessionmaker[Session]) -> Iterator[TestClient]:
+    """TestClient with `get_db` overridden to use the migrated test database."""
+    from app.db.session import get_db
+    from app.main import create_app
+
+    def _override_get_db() -> Iterator[Session]:
+        session = session_factory()
+        try:
+            yield session
+            session.commit()
+        except Exception:
+            session.rollback()
+            raise
+        finally:
+            session.close()
+
+    app = create_app()
+    app.dependency_overrides[get_db] = _override_get_db
+    with TestClient(app) as test_client:
+        yield test_client
+    app.dependency_overrides.clear()
