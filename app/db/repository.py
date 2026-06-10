@@ -10,7 +10,7 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session, selectinload
 
 from app.core.errors import CaseAlreadyExistsError
-from app.db.models import Member, RiskCaseRecord, RiskFactorRecord
+from app.db.models import ExplanationRecord, Member, RiskCaseRecord, RiskFactorRecord
 from app.schemas.risk_case import FactorDirection, RiskBand, RiskCase, RiskFactor
 
 
@@ -102,4 +102,27 @@ def list_risk_cases(
             .limit(limit)
             .offset(offset)
         )
+    )
+
+
+def get_latest_explanation(
+    session: Session, case_id: str
+) -> ExplanationRecord | None:
+    """Return the most recent explanation for a case, eager-loading evals."""
+    return session.scalar(
+        select(ExplanationRecord)
+        .join(RiskCaseRecord, ExplanationRecord.risk_case_id == RiskCaseRecord.id)
+        .where(RiskCaseRecord.case_id == case_id)
+        .options(selectinload(ExplanationRecord.eval_results))
+        .order_by(ExplanationRecord.id.desc())
+    )
+
+
+def get_explanation(
+    session: Session, explanation_id: int
+) -> ExplanationRecord | None:
+    return session.scalar(
+        select(ExplanationRecord)
+        .where(ExplanationRecord.id == explanation_id)
+        .options(selectinload(ExplanationRecord.eval_results))
     )
