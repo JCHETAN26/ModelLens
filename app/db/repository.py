@@ -11,7 +11,7 @@ from sqlalchemy.orm import Session, selectinload
 
 from app.core.errors import CaseAlreadyExistsError
 from app.db.models import Member, RiskCaseRecord, RiskFactorRecord
-from app.schemas.risk_case import RiskCase
+from app.schemas.risk_case import FactorDirection, RiskBand, RiskCase, RiskFactor
 
 
 def _get_or_create_member(session: Session, member_id: str) -> Member:
@@ -52,6 +52,27 @@ def create_risk_case(session: Session, payload: RiskCase) -> RiskCaseRecord:
     session.add(record)
     session.flush()
     return record
+
+
+def record_to_schema(record: RiskCaseRecord) -> RiskCase:
+    """Rebuild the validated `RiskCase` input schema from a stored record."""
+    return RiskCase(
+        member_id=record.member.member_id,
+        case_id=record.case_id,
+        risk_score=record.risk_score,
+        risk_band=RiskBand(record.risk_band),
+        model_name=record.model_name,
+        model_version=record.model_version,
+        factors=[
+            RiskFactor(
+                name=f.name,
+                direction=FactorDirection(f.direction),
+                weight=f.weight,
+                evidence=f.evidence,
+            )
+            for f in record.factors
+        ],
+    )
 
 
 def get_risk_case(session: Session, case_id: str) -> RiskCaseRecord | None:
