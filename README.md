@@ -6,7 +6,7 @@ ModelLens takes structured risk model outputs (risk scores, contributing factors
 
 ## Status
 
-Early-stage build. See [`build-plan.md`](build-plan.md) for the phased roadmap and [`system-prompt.md`](system-prompt.md) for engineering rules.
+Feature-complete against the phased build plan: validated case ingestion, a LangGraph generation + evaluation workflow, PostgreSQL persistence with audit trails, a deterministic evaluation harness, a synthetic dataset + batch eval, Docker Compose, and CI. See [`build-plan.md`](build-plan.md) for the roadmap and [`system-prompt.md`](system-prompt.md) for engineering rules.
 
 ## Tech stack
 
@@ -39,6 +39,46 @@ pytest           # tests
 
 The default `LLM_PROVIDER=fake` lets the full pipeline and test suite run with **no API key and no network**, using a deterministic stub. Set `LLM_PROVIDER=openai` or `anthropic` with the matching API key for real generation.
 
+## Run with Docker
+
+```bash
+docker compose up        # starts postgres + api (migrations run on startup)
+curl http://localhost:8000/health
+```
+
+Postgres is published on host port **5433** (container 5432) to avoid clashing with a local Postgres.
+
+## API
+
+| Method | Path | Description |
+|--------|------|-------------|
+| `GET`  | `/health` | Liveness probe |
+| `POST` | `/cases` | Create (validate + persist) a structured risk case |
+| `GET`  | `/cases/{case_id}` | Fetch a risk case |
+| `GET`  | `/cases` | List cases (paginated) |
+| `POST` | `/cases/{case_id}/explanations` | Run the LangGraph workflow to generate + evaluate an explanation |
+| `GET`  | `/cases/{case_id}/explanations/latest` | Most recent explanation + eval summary |
+
+A passing run returns `201` with `status="passed"` and the evaluation summary; a run that fails evaluation after retries returns `200` with `status="failed"` and the reasons in `evaluation.details`.
+
+## How it works
+
+1. A structured `RiskCase` is validated by Pydantic and persisted.
+2. The **LangGraph workflow** generates an explanation via the LLM (strict JSON contract, one corrective retry), then runs four **deterministic evaluators** — faithfulness, coverage, readability, safety.
+3. If all pass → persist. If any fail and retries remain → rewrite and re-evaluate. If retries are exhausted → fail gracefully. **Every run writes an audit log.**
+4. Results (explanation + scores + decision) are stored and returned.
+
+See [`docs/architecture.md`](docs/architecture.md) and [`docs/eval_methodology.md`](docs/eval_methodology.md).
+
+## Synthetic dataset & batch evaluation
+
+```bash
+python -m app.evals.dataset                                   # (re)generate 60 synthetic cases
+python -m app.evals.run_batch --input sample_data/risk_cases.json
+```
+
+Batch eval reports pass rate, average faithfulness/coverage/readability, latency, unsupported-claim rate, and a failure-reason histogram to `eval_results.json`. Latest measured numbers: [`docs/resume_metrics.md`](docs/resume_metrics.md).
+
 ## Project layout
 
 ```
@@ -49,9 +89,9 @@ app/
   schemas/  Pydantic request/response models
   llm/      provider clients, prompts, structured output parsing
   graph/    LangGraph state, nodes, workflow
-  evals/    faithfulness, coverage, readability, safety evaluators
+  evals/    evaluators, synthetic dataset generator, batch CLI
 tests/      unit + integration
-sample_data/  synthetic risk cases
+sample_data/  synthetic risk cases + expected outputs
 docs/       architecture, eval methodology, resume metrics
 ```
 
