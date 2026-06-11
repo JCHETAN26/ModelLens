@@ -1,0 +1,17 @@
+.git
+.venv
+venv
+__pycache__
+*.pyc
+.pytest_cache
+.ruff_cache
+.mypy_cache
+tests
+docs
+sample_data
+build-plan.md
+system-prompt.md
+eval_results.json
+.env
+*.db
+.DS_Store
