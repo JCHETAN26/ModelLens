@@ -1,0 +1,76 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Lint, test, schema validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Ruff (lint)
+        run: ruff check .
+
+      - name: Pytest (unit + integration + schema validation)
+        run: pytest -q
+
+      - name: Dataset reproducibility check
+        run: |
+          python -m app.evals.dataset
+          git diff --exit-code sample_data/
+
+  docker:
+    name: Docker build + compose smoke test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build image
+        run: docker compose build
+
+      - name: Start stack
+        run: docker compose up -d
+
+      - name: Wait for API health
+        run: |
+          for i in $(seq 1 30); do
+            if curl -fsS http://localhost:8000/health; then
+              echo "\nAPI healthy"; exit 0
+            fi
+            echo "waiting for API ($i)..."; sleep 3
+          done
+          echo "API did not become healthy in time"
+          docker compose logs
+          exit 1
+
+      - name: Smoke-test full flow (create case + generate explanation)
+        run: |
+          curl -fsS -X POST http://localhost:8000/cases \
+            -H 'Content-Type: application/json' \
+            -d '{"member_id":"mem_ci","case_id":"case_ci","risk_score":0.8,"risk_band":"high","model_name":"m","model_version":"v1","factors":[{"name":"Recent emergency visit","direction":"increases_risk","weight":0.6,"evidence":"Member had two emergency visits in the last sixty days."}]}'
+          echo
+          curl -fsS -X POST http://localhost:8000/cases/case_ci/explanations | tee /tmp/expl.json
+          echo
+          python -c "import json,sys; d=json.load(open('/tmp/expl.json')); assert d['status']=='passed', d; print('explanation status:', d['status'])"
+
+      - name: Tear down
+        if: always()
+        run: docker compose down -v
