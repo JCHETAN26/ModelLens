@@ -1,0 +1,1702 @@
+[
+  {
+    "member_id": "applicant_0000",
+    "case_id": "credit_g_0000",
+    "risk_score": 0.8746,
+    "risk_band": "high",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Loan duration (months)",
+        "direction": "increases_risk",
+        "weight": 0.2579,
+        "evidence": "Loan duration (months) is 48, which is above the typical applicant for this portfolio."
+      },
+      {
+        "name": "Property owned",
+        "direction": "increases_risk",
+        "weight": 0.2526,
+        "evidence": "Property owned is 'no known property' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2495,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Checking account status",
+        "direction": "increases_risk",
+        "weight": 0.24,
+        "evidence": "Checking account status is '<0' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0001",
+    "case_id": "credit_g_0001",
+    "risk_score": 0.0387,
+    "risk_band": "low",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Checking account status",
+        "direction": "decreases_risk",
+        "weight": 0.3359,
+        "evidence": "Checking account status is 'no checking' for this applicant."
+      },
+      {
+        "name": "Property owned",
+        "direction": "increases_risk",
+        "weight": 0.2657,
+        "evidence": "Property owned is 'no known property' for this applicant."
+      },
+      {
+        "name": "Housing situation",
+        "direction": "decreases_risk",
+        "weight": 0.2078,
+        "evidence": "Housing situation is 'for free' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "decreases_risk",
+        "weight": 0.1906,
+        "evidence": "Savings account status is 'no known savings' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0002",
+    "case_id": "credit_g_0002",
+    "risk_score": 0.0574,
+    "risk_band": "low",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Checking account status",
+        "direction": "decreases_risk",
+        "weight": 0.3569,
+        "evidence": "Checking account status is 'no checking' for this applicant."
+      },
+      {
+        "name": "Employment length",
+        "direction": "decreases_risk",
+        "weight": 0.2408,
+        "evidence": "Employment length is '4<=X<7' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.2016,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      },
+      {
+        "name": "Housing situation",
+        "direction": "increases_risk",
+        "weight": 0.2007,
+        "evidence": "Housing situation is 'rent' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0003",
+    "case_id": "credit_g_0003",
+    "risk_score": 0.019,
+    "risk_band": "low",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Checking account status",
+        "direction": "decreases_risk",
+        "weight": 0.2983,
+        "evidence": "Checking account status is 'no checking' for this applicant."
+      },
+      {
+        "name": "Credit history",
+        "direction": "decreases_risk",
+        "weight": 0.2734,
+        "evidence": "Credit history is 'critical/other existing credit' for this applicant."
+      },
+      {
+        "name": "Loan purpose",
+        "direction": "decreases_risk",
+        "weight": 0.2365,
+        "evidence": "Loan purpose is 'used car' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "decreases_risk",
+        "weight": 0.1918,
+        "evidence": "Savings account status is '>=1000' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0004",
+    "case_id": "credit_g_0004",
+    "risk_score": 0.2978,
+    "risk_band": "low",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Checking account status",
+        "direction": "decreases_risk",
+        "weight": 0.2972,
+        "evidence": "Checking account status is 'no checking' for this applicant."
+      },
+      {
+        "name": "Loan purpose",
+        "direction": "decreases_risk",
+        "weight": 0.2356,
+        "evidence": "Loan purpose is 'used car' for this applicant."
+      },
+      {
+        "name": "Property owned",
+        "direction": "increases_risk",
+        "weight": 0.235,
+        "evidence": "Property owned is 'no known property' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2322,
+        "evidence": "Savings account status is '<100' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0005",
+    "case_id": "credit_g_0005",
+    "risk_score": 0.6701,
+    "risk_band": "high",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2966,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Checking account status",
+        "direction": "increases_risk",
+        "weight": 0.2853,
+        "evidence": "Checking account status is '<0' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.2144,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      },
+      {
+        "name": "Personal status",
+        "direction": "decreases_risk",
+        "weight": 0.2037,
+        "evidence": "Personal status is 'male single' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0006",
+    "case_id": "credit_g_0006",
+    "risk_score": 0.4263,
+    "risk_band": "medium",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.3055,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Employment length",
+        "direction": "decreases_risk",
+        "weight": 0.2638,
+        "evidence": "Employment length is '4<=X<7' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.2209,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      },
+      {
+        "name": "Personal status",
+        "direction": "decreases_risk",
+        "weight": 0.2098,
+        "evidence": "Personal status is 'male single' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0007",
+    "case_id": "credit_g_0007",
+    "risk_score": 0.6351,
+    "risk_band": "medium",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Property owned",
+        "direction": "increases_risk",
+        "weight": 0.284,
+        "evidence": "Property owned is 'no known property' for this applicant."
+      },
+      {
+        "name": "Checking account status",
+        "direction": "increases_risk",
+        "weight": 0.2699,
+        "evidence": "Checking account status is '<0' for this applicant."
+      },
+      {
+        "name": "Employment length",
+        "direction": "decreases_risk",
+        "weight": 0.2423,
+        "evidence": "Employment length is '4<=X<7' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "decreases_risk",
+        "weight": 0.2038,
+        "evidence": "Savings account status is 'no known savings' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0008",
+    "case_id": "credit_g_0008",
+    "risk_score": 0.0727,
+    "risk_band": "low",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Checking account status",
+        "direction": "decreases_risk",
+        "weight": 0.3065,
+        "evidence": "Checking account status is 'no checking' for this applicant."
+      },
+      {
+        "name": "Credit history",
+        "direction": "decreases_risk",
+        "weight": 0.2809,
+        "evidence": "Credit history is 'critical/other existing credit' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2395,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.1731,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0009",
+    "case_id": "credit_g_0009",
+    "risk_score": 0.5244,
+    "risk_band": "medium",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Loan purpose",
+        "direction": "increases_risk",
+        "weight": 0.3746,
+        "evidence": "Loan purpose is 'education' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2561,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.1851,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      },
+      {
+        "name": "Housing situation",
+        "direction": "increases_risk",
+        "weight": 0.1843,
+        "evidence": "Housing situation is 'rent' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0010",
+    "case_id": "credit_g_0010",
+    "risk_score": 0.1687,
+    "risk_band": "low",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Checking account status",
+        "direction": "decreases_risk",
+        "weight": 0.3601,
+        "evidence": "Checking account status is 'no checking' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2814,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.2034,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      },
+      {
+        "name": "Other payment plans",
+        "direction": "decreases_risk",
+        "weight": 0.1552,
+        "evidence": "Other payment plans is 'none' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0011",
+    "case_id": "credit_g_0011",
+    "risk_score": 0.4127,
+    "risk_band": "medium",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Checking account status",
+        "direction": "decreases_risk",
+        "weight": 0.3438,
+        "evidence": "Checking account status is 'no checking' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2687,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.1942,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      },
+      {
+        "name": "Housing situation",
+        "direction": "increases_risk",
+        "weight": 0.1933,
+        "evidence": "Housing situation is 'rent' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0012",
+    "case_id": "credit_g_0012",
+    "risk_score": 0.5422,
+    "risk_band": "medium",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Loan purpose",
+        "direction": "decreases_risk",
+        "weight": 0.2743,
+        "evidence": "Loan purpose is 'used car' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2703,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Checking account status",
+        "direction": "increases_risk",
+        "weight": 0.26,
+        "evidence": "Checking account status is '<0' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.1954,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0013",
+    "case_id": "credit_g_0013",
+    "risk_score": 0.5095,
+    "risk_band": "medium",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2937,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Checking account status",
+        "direction": "increases_risk",
+        "weight": 0.2825,
+        "evidence": "Checking account status is '<0' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.2123,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      },
+      {
+        "name": "Housing situation",
+        "direction": "increases_risk",
+        "weight": 0.2114,
+        "evidence": "Housing situation is 'rent' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0014",
+    "case_id": "credit_g_0014",
+    "risk_score": 0.4836,
+    "risk_band": "medium",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Loan purpose",
+        "direction": "decreases_risk",
+        "weight": 0.2564,
+        "evidence": "Loan purpose is 'used car' for this applicant."
+      },
+      {
+        "name": "Requested credit amount",
+        "direction": "increases_risk",
+        "weight": 0.2532,
+        "evidence": "Requested credit amount is 9398, which is above the typical applicant for this portfolio."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2526,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Installment rate (% of income)",
+        "direction": "decreases_risk",
+        "weight": 0.2378,
+        "evidence": "Installment rate (% of income) is 1, which is below the typical applicant for this portfolio."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0015",
+    "case_id": "credit_g_0015",
+    "risk_score": 0.1456,
+    "risk_band": "low",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Checking account status",
+        "direction": "decreases_risk",
+        "weight": 0.3469,
+        "evidence": "Checking account status is 'no checking' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2711,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.1959,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      },
+      {
+        "name": "Personal status",
+        "direction": "decreases_risk",
+        "weight": 0.1861,
+        "evidence": "Personal status is 'male single' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0016",
+    "case_id": "credit_g_0016",
+    "risk_score": 0.3717,
+    "risk_band": "medium",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Credit history",
+        "direction": "decreases_risk",
+        "weight": 0.3041,
+        "evidence": "Credit history is 'critical/other existing credit' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2592,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Checking account status",
+        "direction": "increases_risk",
+        "weight": 0.2493,
+        "evidence": "Checking account status is '<0' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.1874,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0017",
+    "case_id": "credit_g_0017",
+    "risk_score": 0.3372,
+    "risk_band": "medium",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2818,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Checking account status",
+        "direction": "increases_risk",
+        "weight": 0.2711,
+        "evidence": "Checking account status is '<0' for this applicant."
+      },
+      {
+        "name": "Employment length",
+        "direction": "decreases_risk",
+        "weight": 0.2434,
+        "evidence": "Employment length is '4<=X<7' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.2037,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0018",
+    "case_id": "credit_g_0018",
+    "risk_score": 0.5803,
+    "risk_band": "medium",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.3238,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.234,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      },
+      {
+        "name": "Housing situation",
+        "direction": "increases_risk",
+        "weight": 0.233,
+        "evidence": "Housing situation is 'rent' for this applicant."
+      },
+      {
+        "name": "Loan purpose",
+        "direction": "increases_risk",
+        "weight": 0.2092,
+        "evidence": "Loan purpose is 'new car' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0019",
+    "case_id": "credit_g_0019",
+    "risk_score": 0.1306,
+    "risk_band": "low",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Credit history",
+        "direction": "decreases_risk",
+        "weight": 0.2934,
+        "evidence": "Credit history is 'critical/other existing credit' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2501,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Checking account status",
+        "direction": "increases_risk",
+        "weight": 0.2405,
+        "evidence": "Checking account status is '<0' for this applicant."
+      },
+      {
+        "name": "Employment length",
+        "direction": "decreases_risk",
+        "weight": 0.216,
+        "evidence": "Employment length is '4<=X<7' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0020",
+    "case_id": "credit_g_0020",
+    "risk_score": 0.5822,
+    "risk_band": "medium",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.3424,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.2475,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      },
+      {
+        "name": "Loan purpose",
+        "direction": "increases_risk",
+        "weight": 0.2213,
+        "evidence": "Loan purpose is 'new car' for this applicant."
+      },
+      {
+        "name": "Other payment plans",
+        "direction": "decreases_risk",
+        "weight": 0.1888,
+        "evidence": "Other payment plans is 'none' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0021",
+    "case_id": "credit_g_0021",
+    "risk_score": 0.0194,
+    "risk_band": "low",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Checking account status",
+        "direction": "decreases_risk",
+        "weight": 0.32,
+        "evidence": "Checking account status is 'no checking' for this applicant."
+      },
+      {
+        "name": "Credit history",
+        "direction": "decreases_risk",
+        "weight": 0.2934,
+        "evidence": "Credit history is 'critical/other existing credit' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "decreases_risk",
+        "weight": 0.2058,
+        "evidence": "Savings account status is '>=1000' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.1808,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0022",
+    "case_id": "credit_g_0022",
+    "risk_score": 0.7586,
+    "risk_band": "high",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Property owned",
+        "direction": "increases_risk",
+        "weight": 0.3002,
+        "evidence": "Property owned is 'no known property' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2966,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.2144,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      },
+      {
+        "name": "Personal status",
+        "direction": "increases_risk",
+        "weight": 0.1888,
+        "evidence": "Personal status is 'male div/sep' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0023",
+    "case_id": "credit_g_0023",
+    "risk_score": 0.1063,
+    "risk_band": "low",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Checking account status",
+        "direction": "decreases_risk",
+        "weight": 0.3065,
+        "evidence": "Checking account status is 'no checking' for this applicant."
+      },
+      {
+        "name": "Credit history",
+        "direction": "decreases_risk",
+        "weight": 0.2809,
+        "evidence": "Credit history is 'critical/other existing credit' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2395,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.1731,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0024",
+    "case_id": "credit_g_0024",
+    "risk_score": 0.1609,
+    "risk_band": "low",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Checking account status",
+        "direction": "decreases_risk",
+        "weight": 0.2866,
+        "evidence": "Checking account status is 'no checking' for this applicant."
+      },
+      {
+        "name": "Credit history",
+        "direction": "decreases_risk",
+        "weight": 0.2627,
+        "evidence": "Credit history is 'critical/other existing credit' for this applicant."
+      },
+      {
+        "name": "Property owned",
+        "direction": "increases_risk",
+        "weight": 0.2267,
+        "evidence": "Property owned is 'no known property' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.224,
+        "evidence": "Savings account status is '<100' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0025",
+    "case_id": "credit_g_0025",
+    "risk_score": 0.0431,
+    "risk_band": "low",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Loan purpose",
+        "direction": "decreases_risk",
+        "weight": 0.2736,
+        "evidence": "Loan purpose is 'used car' for this applicant."
+      },
+      {
+        "name": "Checking account status",
+        "direction": "increases_risk",
+        "weight": 0.2593,
+        "evidence": "Checking account status is '<0' for this applicant."
+      },
+      {
+        "name": "Installment rate (% of income)",
+        "direction": "decreases_risk",
+        "weight": 0.2537,
+        "evidence": "Installment rate (% of income) is 1, which is below the typical applicant for this portfolio."
+      },
+      {
+        "name": "Housing situation",
+        "direction": "decreases_risk",
+        "weight": 0.2134,
+        "evidence": "Housing situation is 'for free' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0026",
+    "case_id": "credit_g_0026",
+    "risk_score": 0.0458,
+    "risk_band": "low",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Credit history",
+        "direction": "decreases_risk",
+        "weight": 0.3496,
+        "evidence": "Credit history is 'critical/other existing credit' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "decreases_risk",
+        "weight": 0.2453,
+        "evidence": "Savings account status is '>=1000' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.2154,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      },
+      {
+        "name": "Personal status",
+        "direction": "increases_risk",
+        "weight": 0.1897,
+        "evidence": "Personal status is 'male div/sep' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0027",
+    "case_id": "credit_g_0027",
+    "risk_score": 0.6784,
+    "risk_band": "high",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2937,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Checking account status",
+        "direction": "increases_risk",
+        "weight": 0.2825,
+        "evidence": "Checking account status is '<0' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.2123,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      },
+      {
+        "name": "Housing situation",
+        "direction": "increases_risk",
+        "weight": 0.2114,
+        "evidence": "Housing situation is 'rent' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0028",
+    "case_id": "credit_g_0028",
+    "risk_score": 0.8703,
+    "risk_band": "high",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Loan duration (months)",
+        "direction": "increases_risk",
+        "weight": 0.2779,
+        "evidence": "Loan duration (months) is 48, which is above the typical applicant for this portfolio."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.269,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Checking account status",
+        "direction": "increases_risk",
+        "weight": 0.2587,
+        "evidence": "Checking account status is '<0' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.1944,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0029",
+    "case_id": "credit_g_0029",
+    "risk_score": 0.1299,
+    "risk_band": "low",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Credit history",
+        "direction": "decreases_risk",
+        "weight": 0.2878,
+        "evidence": "Credit history is 'critical/other existing credit' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2453,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Checking account status",
+        "direction": "increases_risk",
+        "weight": 0.236,
+        "evidence": "Checking account status is '<0' for this applicant."
+      },
+      {
+        "name": "Installment rate (% of income)",
+        "direction": "decreases_risk",
+        "weight": 0.2309,
+        "evidence": "Installment rate (% of income) is 1, which is below the typical applicant for this portfolio."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0030",
+    "case_id": "credit_g_0030",
+    "risk_score": 0.4497,
+    "risk_band": "medium",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Loan duration (months)",
+        "direction": "increases_risk",
+        "weight": 0.2855,
+        "evidence": "Loan duration (months) is 48, which is above the typical applicant for this portfolio."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2763,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Employment length",
+        "direction": "decreases_risk",
+        "weight": 0.2386,
+        "evidence": "Employment length is '4<=X<7' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.1997,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0031",
+    "case_id": "credit_g_0031",
+    "risk_score": 0.1191,
+    "risk_band": "low",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.3341,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.2415,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      },
+      {
+        "name": "Personal status",
+        "direction": "decreases_risk",
+        "weight": 0.2294,
+        "evidence": "Personal status is 'male single' for this applicant."
+      },
+      {
+        "name": "Other debtors / guarantors",
+        "direction": "decreases_risk",
+        "weight": 0.195,
+        "evidence": "Other debtors / guarantors is 'guarantor' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0032",
+    "case_id": "credit_g_0032",
+    "risk_score": 0.0615,
+    "risk_band": "low",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Savings account status",
+        "direction": "decreases_risk",
+        "weight": 0.2929,
+        "evidence": "Savings account status is 'no known savings' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.2915,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      },
+      {
+        "name": "Other payment plans",
+        "direction": "decreases_risk",
+        "weight": 0.2224,
+        "evidence": "Other payment plans is 'none' for this applicant."
+      },
+      {
+        "name": "Property owned",
+        "direction": "decreases_risk",
+        "weight": 0.1933,
+        "evidence": "Property owned is 'real estate' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0033",
+    "case_id": "credit_g_0033",
+    "risk_score": 0.598,
+    "risk_band": "medium",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Loan duration (months)",
+        "direction": "increases_risk",
+        "weight": 0.3124,
+        "evidence": "Loan duration (months) is 48, which is above the typical applicant for this portfolio."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.3023,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.2185,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      },
+      {
+        "name": "Other payment plans",
+        "direction": "decreases_risk",
+        "weight": 0.1667,
+        "evidence": "Other payment plans is 'none' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0034",
+    "case_id": "credit_g_0034",
+    "risk_score": 0.0454,
+    "risk_band": "low",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Checking account status",
+        "direction": "decreases_risk",
+        "weight": 0.3747,
+        "evidence": "Checking account status is 'no checking' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "decreases_risk",
+        "weight": 0.2126,
+        "evidence": "Savings account status is 'no known savings' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.2116,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      },
+      {
+        "name": "Personal status",
+        "direction": "decreases_risk",
+        "weight": 0.201,
+        "evidence": "Personal status is 'male single' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0035",
+    "case_id": "credit_g_0035",
+    "risk_score": 0.3944,
+    "risk_band": "medium",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.323,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.2335,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      },
+      {
+        "name": "Personal status",
+        "direction": "decreases_risk",
+        "weight": 0.2218,
+        "evidence": "Personal status is 'male single' for this applicant."
+      },
+      {
+        "name": "Employment length",
+        "direction": "increases_risk",
+        "weight": 0.2217,
+        "evidence": "Employment length is 'unemployed' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0036",
+    "case_id": "credit_g_0036",
+    "risk_score": 0.1277,
+    "risk_band": "low",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Credit history",
+        "direction": "decreases_risk",
+        "weight": 0.3,
+        "evidence": "Credit history is 'critical/other existing credit' for this applicant."
+      },
+      {
+        "name": "Loan purpose",
+        "direction": "decreases_risk",
+        "weight": 0.2595,
+        "evidence": "Loan purpose is 'used car' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2557,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.1848,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0037",
+    "case_id": "credit_g_0037",
+    "risk_score": 0.0872,
+    "risk_band": "low",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Checking account status",
+        "direction": "decreases_risk",
+        "weight": 0.3747,
+        "evidence": "Checking account status is 'no checking' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "decreases_risk",
+        "weight": 0.2126,
+        "evidence": "Savings account status is 'no known savings' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.2116,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      },
+      {
+        "name": "Personal status",
+        "direction": "decreases_risk",
+        "weight": 0.201,
+        "evidence": "Personal status is 'male single' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0038",
+    "case_id": "credit_g_0038",
+    "risk_score": 0.1862,
+    "risk_band": "low",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Loan purpose",
+        "direction": "increases_risk",
+        "weight": 0.3356,
+        "evidence": "Loan purpose is 'education' for this applicant."
+      },
+      {
+        "name": "Credit history",
+        "direction": "decreases_risk",
+        "weight": 0.2691,
+        "evidence": "Credit history is 'critical/other existing credit' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2294,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.1658,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0039",
+    "case_id": "credit_g_0039",
+    "risk_score": 0.6303,
+    "risk_band": "medium",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.3273,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.2366,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      },
+      {
+        "name": "Personal status",
+        "direction": "decreases_risk",
+        "weight": 0.2247,
+        "evidence": "Personal status is 'male single' for this applicant."
+      },
+      {
+        "name": "Loan purpose",
+        "direction": "increases_risk",
+        "weight": 0.2115,
+        "evidence": "Loan purpose is 'new car' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0040",
+    "case_id": "credit_g_0040",
+    "risk_score": 0.0622,
+    "risk_band": "low",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Checking account status",
+        "direction": "decreases_risk",
+        "weight": 0.3298,
+        "evidence": "Checking account status is 'no checking' for this applicant."
+      },
+      {
+        "name": "Loan purpose",
+        "direction": "decreases_risk",
+        "weight": 0.2615,
+        "evidence": "Loan purpose is 'used car' for this applicant."
+      },
+      {
+        "name": "Employment length",
+        "direction": "decreases_risk",
+        "weight": 0.2225,
+        "evidence": "Employment length is '4<=X<7' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.1863,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0041",
+    "case_id": "credit_g_0041",
+    "risk_score": 0.342,
+    "risk_band": "medium",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Checking account status",
+        "direction": "decreases_risk",
+        "weight": 0.3134,
+        "evidence": "Checking account status is 'no checking' for this applicant."
+      },
+      {
+        "name": "Property owned",
+        "direction": "increases_risk",
+        "weight": 0.2478,
+        "evidence": "Property owned is 'no known property' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2449,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Housing situation",
+        "direction": "decreases_risk",
+        "weight": 0.1938,
+        "evidence": "Housing situation is 'for free' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0042",
+    "case_id": "credit_g_0042",
+    "risk_score": 0.7313,
+    "risk_band": "high",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Property owned",
+        "direction": "increases_risk",
+        "weight": 0.2688,
+        "evidence": "Property owned is 'no known property' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2656,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Checking account status",
+        "direction": "increases_risk",
+        "weight": 0.2554,
+        "evidence": "Checking account status is '<0' for this applicant."
+      },
+      {
+        "name": "Housing situation",
+        "direction": "decreases_risk",
+        "weight": 0.2102,
+        "evidence": "Housing situation is 'for free' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0043",
+    "case_id": "credit_g_0043",
+    "risk_score": 0.5054,
+    "risk_band": "medium",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2783,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Checking account status",
+        "direction": "increases_risk",
+        "weight": 0.2677,
+        "evidence": "Checking account status is '<0' for this applicant."
+      },
+      {
+        "name": "Employment length",
+        "direction": "decreases_risk",
+        "weight": 0.2403,
+        "evidence": "Employment length is '4<=X<7' for this applicant."
+      },
+      {
+        "name": "Credit history",
+        "direction": "increases_risk",
+        "weight": 0.2137,
+        "evidence": "Credit history is 'no credits/all paid' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0044",
+    "case_id": "credit_g_0044",
+    "risk_score": 0.088,
+    "risk_band": "low",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.3377,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.2441,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      },
+      {
+        "name": "Personal status",
+        "direction": "decreases_risk",
+        "weight": 0.2319,
+        "evidence": "Personal status is 'male single' for this applicant."
+      },
+      {
+        "name": "Other payment plans",
+        "direction": "decreases_risk",
+        "weight": 0.1862,
+        "evidence": "Other payment plans is 'none' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0045",
+    "case_id": "credit_g_0045",
+    "risk_score": 0.2779,
+    "risk_band": "low",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.3622,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.2618,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      },
+      {
+        "name": "Other payment plans",
+        "direction": "decreases_risk",
+        "weight": 0.1997,
+        "evidence": "Other payment plans is 'none' for this applicant."
+      },
+      {
+        "name": "Loan duration (months)",
+        "direction": "decreases_risk",
+        "weight": 0.1762,
+        "evidence": "Loan duration (months) is 8, which is below the typical applicant for this portfolio."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0046",
+    "case_id": "credit_g_0046",
+    "risk_score": 0.0153,
+    "risk_band": "low",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Credit history",
+        "direction": "decreases_risk",
+        "weight": 0.3261,
+        "evidence": "Credit history is 'critical/other existing credit' for this applicant."
+      },
+      {
+        "name": "Loan purpose",
+        "direction": "decreases_risk",
+        "weight": 0.2821,
+        "evidence": "Loan purpose is 'used car' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.2009,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      },
+      {
+        "name": "Personal status",
+        "direction": "decreases_risk",
+        "weight": 0.1909,
+        "evidence": "Personal status is 'male single' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0047",
+    "case_id": "credit_g_0047",
+    "risk_score": 0.5039,
+    "risk_band": "medium",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2758,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Checking account status",
+        "direction": "increases_risk",
+        "weight": 0.2653,
+        "evidence": "Checking account status is '<0' for this applicant."
+      },
+      {
+        "name": "Installment rate (% of income)",
+        "direction": "decreases_risk",
+        "weight": 0.2596,
+        "evidence": "Installment rate (% of income) is 1, which is below the typical applicant for this portfolio."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.1994,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0048",
+    "case_id": "credit_g_0048",
+    "risk_score": 0.3817,
+    "risk_band": "medium",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Checking account status",
+        "direction": "increases_risk",
+        "weight": 0.3105,
+        "evidence": "Checking account status is '<0' for this applicant."
+      },
+      {
+        "name": "Savings account status",
+        "direction": "decreases_risk",
+        "weight": 0.2345,
+        "evidence": "Savings account status is 'no known savings' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.2334,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      },
+      {
+        "name": "Personal status",
+        "direction": "decreases_risk",
+        "weight": 0.2217,
+        "evidence": "Personal status is 'male single' for this applicant."
+      }
+    ]
+  },
+  {
+    "member_id": "applicant_0049",
+    "case_id": "credit_g_0049",
+    "risk_score": 0.7213,
+    "risk_band": "high",
+    "model_name": "german_credit_logreg",
+    "model_version": "2026.06",
+    "factors": [
+      {
+        "name": "Savings account status",
+        "direction": "increases_risk",
+        "weight": 0.2966,
+        "evidence": "Savings account status is '<100' for this applicant."
+      },
+      {
+        "name": "Checking account status",
+        "direction": "increases_risk",
+        "weight": 0.2853,
+        "evidence": "Checking account status is '<0' for this applicant."
+      },
+      {
+        "name": "Foreign worker",
+        "direction": "increases_risk",
+        "weight": 0.2144,
+        "evidence": "Foreign worker is 'yes' for this applicant."
+      },
+      {
+        "name": "Personal status",
+        "direction": "decreases_risk",
+        "weight": 0.2037,
+        "evidence": "Personal status is 'male single' for this applicant."
+      }
+    ]
+  }
+]

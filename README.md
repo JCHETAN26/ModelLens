@@ -79,6 +79,22 @@ python -m app.evals.run_batch --input sample_data/risk_cases.json
 
 Batch eval reports pass rate, average faithfulness/coverage/readability, latency, unsupported-claim rate, and a failure-reason histogram to `eval_results.json`. Latest measured numbers: [`docs/resume_metrics.md`](docs/resume_metrics.md).
 
+## Real upstream risk model (end-to-end)
+
+ModelLens explains *structured risk outputs* — and those outputs can come from a **real trained model**, not just synthetic data. `app/risk_model/` trains a logistic-regression credit-risk classifier on the public **German Credit** dataset (1,000 real applicants, no PII; CSV committed under `data/`), then turns each applicant's per-feature contributions into a `RiskCase`:
+
+```bash
+pip install -e ".[ml]"                  # scikit-learn + pandas
+
+# Train the model and emit real risk cases (prints AUC / accuracy)
+python -m app.risk_model.generate --n 50 --output sample_data/real_risk_cases.json
+
+# Explain + evaluate those real cases through the same pipeline
+python -m app.evals.run_batch --input sample_data/real_risk_cases.json
+```
+
+Each feature's `coefficient × standardized value` is an exact, signed contribution → it maps directly onto a factor's `direction` (increases/decreases risk) and `weight`, with the feature value as the grounding `evidence`. Measured: **ROC-AUC ≈ 0.80, accuracy ≈ 0.77** on a held-out split. This makes the system run front-to-back: **raw data → trained model → explained, evaluated, audited output.**
+
 ## Project layout
 
 ```
@@ -90,8 +106,10 @@ app/
   llm/      provider clients, prompts, structured output parsing
   graph/    LangGraph state, nodes, workflow
   evals/    evaluators, synthetic dataset generator, batch CLI
+  risk_model/  real credit-risk model (train, attribution, RiskCase adapter)
 tests/      unit + integration
-sample_data/  synthetic risk cases + expected outputs
+data/       committed German Credit dataset (CSV)
+sample_data/  synthetic + real-model risk cases
 docs/       architecture, eval methodology, resume metrics
 ```
 
