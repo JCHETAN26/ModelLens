@@ -85,6 +85,21 @@ All tunables are environment-driven (`app/core/config.py`): `DATABASE_URL`,
 (`FAITHFULNESS_THRESHOLD`, `COVERAGE_THRESHOLD`, `READABILITY_MAX_GRADE`,
 `MAX_REWRITE_RETRIES`). See `.env.example`.
 
+## Upstream risk model (`app/risk_model/`)
+
+ModelLens explains *structured risk outputs* — which can come from a real model.
+This optional package (requires the `ml` extra) trains a logistic-regression
+classifier on the public **German Credit** dataset and converts each applicant's
+prediction into a `RiskCase`:
+
+- `dataset.py` — loads the committed CSV (`data/german_credit.csv`); readable feature names.
+- `train.py` — `ColumnTransformer` (standardize numeric, one-hot categorical) + `LogisticRegression`; reports held-out ROC-AUC / accuracy.
+- `adapter.py` — per-feature contribution = `coefficient × encoded value` (exact, signed) → factor `direction` + normalized `weight`; feature value → `evidence`.
+- `generate.py` — emits real `RiskCase`s consumable by the explanation pipeline and batch evaluator.
+
+It is deliberately isolated from the API serving path, so the API image does
+not depend on scikit-learn.
+
 ## Local deployment
 
 `docker compose up` starts `postgres` (16) and `api`. The API container's

@@ -36,6 +36,29 @@ evaluator flagged explanations whose Flesch-Kincaid grade exceeded the
 member-facing threshold of 12 — demonstrating that the harness discriminates
 rather than rubber-stamping.
 
+## Upstream risk model (real data — German Credit)
+
+A logistic-regression credit-risk model trained on the public German Credit
+dataset (1,000 real applicants, no PII), whose per-feature contributions become
+ModelLens risk cases.
+
+```bash
+python -m app.risk_model.generate --n 50 --output sample_data/real_risk_cases.json
+python -m app.evals.run_batch --input sample_data/real_risk_cases.json
+```
+
+| Metric | Value |
+|--------|-------|
+| Dataset | German Credit, 1,000 applicants (750 train / 250 test) |
+| Model | Logistic regression (exact coefficient × value attribution) |
+| ROC-AUC (held-out) | **0.804** |
+| Accuracy (held-out) | **0.772** |
+| Real cases explained + evaluated | 50 |
+| Pass rate through the eval pipeline | 100% (faithfulness/coverage 1.000, readability grade 8.69) |
+
+This demonstrates the full path: **real data → trained model → structured risk
+outputs → grounded, evaluated, audited explanations.**
+
 ## Test coverage
 
 - 65 automated tests (unit + integration), green in CI.
@@ -47,8 +70,10 @@ rather than rubber-stamping.
 
 > Built ModelLens, a LangGraph-based AI explanation pipeline that converts
 > structured risk model outputs into member-facing explanations, with automated
-> grounding, coverage, readability, and safety evaluation across 60 synthetic
-> risk cases.
+> grounding, coverage, readability, and safety evaluation. Trained a logistic-
+> regression credit-risk model (ROC-AUC 0.80) on the German Credit dataset and
+> fed its per-feature contributions through the pipeline, demonstrating an
+> end-to-end path from raw data to grounded, audited explanations.
 
 ## Claims NOT to make (until separately measured)
 
