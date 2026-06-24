@@ -9,8 +9,6 @@ __pycache__
 tests
 docs
 sample_data
-build-plan.md
-system-prompt.md
 eval_results.json
 .env
 *.db

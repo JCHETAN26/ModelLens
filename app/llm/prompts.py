@@ -1,7 +1,7 @@
 """Prompt construction for explanation generation.
 
-The system prompt encodes the LLM safety rules (system-prompt.md): explain only
-the provided structured input, never diagnose, advise, or invent factors.
+The system prompt encodes the LLM safety rules: explain only the provided
+structured input, never diagnose, advise, or invent factors.
 """
 
 from __future__ import annotations

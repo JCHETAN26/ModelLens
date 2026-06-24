@@ -318,4 +318,4 @@ When real LLM providers and labeled data are introduced, re-run the batch eval a
 
 ---
 
-See [`build-plan.md`](build-plan.md) for the full phased roadmap and [`system-prompt.md`](system-prompt.md) for the engineering rules this project was built under.
+See [`docs/architecture.md`](docs/architecture.md), [`docs/eval_methodology.md`](docs/eval_methodology.md), and [`docs/resume_metrics.md`](docs/resume_metrics.md) for the deeper write-ups.
